@@ -1,0 +1,239 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[tmargin=1in, scale=0.84]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage{comment,csquotes}
+\addtolength{\hintscolumnwidth}{7pt}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Xuan}
+\familyname{Luo}
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+%No. 800, Dongchuan Road, Shanghai, 200240
+\address{CSE 324}{University of Washington, Seattle, WA 98195}
+\mobile{(+1) 206-866-4956}
+\email{xuanluo@cs.washington.edu}%optional, remove the line if not wanted
+% The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\homepage{bcmi.sjtu.edu.cn/\textasciitilde luoxuan}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+\section{Research Interests}
+\cvitemwithcomment{}{Augmented/Virtual Reality}{}
+\cvitemwithcomment{}{Computer Vision}{Stereo Matching, Deep Learning, Detection}
+\cvitemwithcomment{}{Graphics}{}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\cventry{2015--now}{Ph.D., Computer Science and Engineering}{University of Washington}{Seattle, WA, US}{}{}
+\cvlistitem{Advised by \href{https://homes.cs.washington.edu/~seitz/}{\emph{\textbf{Steven M. Seitz}}} in \href{http://grail.cs.washington.edu}{\emph{GRAIL}} lab.}
+\cvlistitem{Area of Research: Virtual/Augmented Reality.}
+	
+\cventry{2011--2015}{B.S., Computer Science and Technology}{Shanghai Jiao Tong University (SJTU)}{}{China}{}
+\cvitem{Program}{\href{http://zhiyuan.sjtu.edu.cn/teachers/computer}{\textbf{\emph{ACM Honored Class}}} (a pilot computer science class in China), Zhiyuan College}
+\cvlistitem{Rank:  All 3 years: 2/27. Sophomore year: \textbf{1/27}.}
+\cvlistitem{Major GPA: 3.96/4.3, 91.28/100. Cumulative GPA: 3.95/4.3 , 90.97/100. (All 3 years)}
+\cvlistitem{Good \textbf{math} training: 14 out of all 15 math courses are above A and 8 of them are over A+. }
+%----------------------------------------------------------------------------------------
+%	Summer Program
+%----------------------------------------------------------------------------------------
+\section{Summer Program}
+\cvitemwithcomment{7.2014}{Cornell University, USA}{Took courses and visited Cornell Graphics and Vision Group}
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\section{Honors and Awards}
+\cvitemwithcomment{2015}{Distinguished Graduate Scholarship, SJTU}{Top 1\% }
+\cvitemwithcomment{2015}{Shanghai Outstanding Graduate}{Top 1\%}
+\cvitemwithcomment{2013}{National Scholarship, China}{Highest scholarship in China, top 1\%}
+\cvitemwithcomment{2012}{Kai Yuan Scholarship, SJTU}{Top 2\%} %Awarded to top 20 among all majors in Zhiyuan College
+\cvitemwithcomment{2012}{the 2012 University Physics Competition, Silver Medal, USA}{Top 15\%}
+%----------------------------------------------------------------------------------------
+%	PUBLICATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Publications}
+\cvitem{}{Xuejiao Bai, \textbf{Xuan Luo}, Shuo Li.  \textit{\enquote{Adaptive Stereo Matching via Loop-erased Random Walk}.} \textbf{IEEE International Conference on Image Processing (ICIP), 2014}.}
+%\cvitem{}{Xuejiao Bai, \textbf{Xuan Luo}, Shuo Li.  \textit{\enquote{An Effective Disparity-Prediction-Based Accelerator for Stereo Matching}} \textbf{International Journal of Computer Vision (IJCV)} (submitted in 2014).}
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{Research Experience}
+%TODO turn the papers and projects to linkss
+\subsection{Stereo Matching}
+\cvitem{Goal}{Recover depth information from a pair of images of the same scene. ($disparity \propto 1/depth$)}
+\cvitem{Advisor}{Hongtao Lu, Center for Brain-like Computing and Machine Intelligence, SJTU, China}
+\cventry{8.2013-1.2014}{Adaptive Stereo Matching via Loop-erased Random Walk, \emph{ICIP 2014}}{\href{http://bcmi.sjtu.edu.cn/~luoxuan/papers/icip2014.pdf}{http://bcmi.sjtu.edu.cn/$\sim$luoxuan/papers/icip2014.pdf}}{}{}{
+I proposed to use a random tree generated by Loop-erased Radom Walk (LERW) to replace traditional minimum spanning tree in non-local methods. LERW achieves better results especially over curved \& slanted surfaces due to its more adaptive support windows (SW). I also provided a mathematical analysis to explain this strength of randomness, giving deeper understanding of SWs of the tree-based algorithms.}
+%Previous tree-based algorithms are based on Minimum Spanning Tree (MST). They provide poorly adaptive support windows and perform badly on curved \& slanted surfaces. We discovered that replacing MST with a random tree generated by loop-erased random walk to incorporate randomness can well overcome these drawbacks. One of its key contributions is my mathematical analysis to explain this strength of randomness, giving deeper understanding of support windows of the tree-based algorithms.}}
+
+
+\cventry{2.2014-8.2014}{Fast Non-local Stereo Matching based on Hierarchical Disparity Prediction}{}{}{}{
+	\textit{\href{http://arxiv.org/abs/1509.08197}{pdf: http://arxiv.org/abs/1509.08197}} \\
+	\textit{\href{https://github.com/roxanneluo/Hierarchical-Disparity-Prediction}{code: https://github.com/roxanneluo/Hierarchical-Disparity-Prediction}}
+}
+\cvitem{}{I proposed a new framework, DPA. Almost all tree-based algorithms can use DPA to improve speed and accuracy. For example, with DPA, the segment-tree-based algorithm is 6.25 times faster and 3.04\% more accurate over Middlebury 2006 dataset. More specifically, I contributed:}
+\cvlistitem{the Disparity Prediction Model, a Bayesian model to predict possible disparities,}
+\cvlistitem{the Disparity Prediction Forest (DPF), which utilizes the prediction result to speed up. Moreover, instead of using color similarity to approximate disparity similarity, it defines disparity similarity based on disparity information directly and improves the accuracy.}
+%Most previous algorithms use brute force to search the best disparity (inversely propotional to depth) from all disparity candidates. So they are slow and unsuitable for real-world applications. 
+\subsection{Deep Learning}
+\cvitem{Advisor}{Shuicheng Yan, Learning and Vision Research Group, National University of Singapore}
+\cventry{8.2014-10.2014}{Purine}{}{}{}{
+\textit{\href{http://arxiv.org/abs/1412.6249}{pdf: http://arxiv.org/abs/1412.6249}\\
+\href{http://bcmi.sjtu.edu.cn/~luoxuan/slides/purine_introduction.html}{ppt: http://bcmi.sjtu.edu.cn/$\sim$luoxuan/slides/purine\_introduction.html}\\
+\href{https://github.com/purine/purine2}{code: https://github.com/purine/purine2}\\
+}
+Purine is a flexible graph-based parallel deep learning framework. It outperforms current widely-used deep learning frameworks in that its graph-based design allows any kind of parallelism, both data and model parallelism, arbitrary network structure (e.g., recurrent neural network), and can utilize unlimited number of CPUs and GPUs. And it's fast and easy-to-use. I contributed the multi-GPU \& multi-machine data copy part, the key bottleneck for all parallel frameworks, testing codes and part of the network definition protocol. It will be released soon.
+} 
+\cventry{10.2014--now}{Gradient of CNN}{}{}{}{I'm trying to exploit information contained in the gradient of CNN on object detection.}
+
+\subsection{Robotics}
+\cvitem{Advisor}{Zhengping Feng, School of Naval Architecture, Ocean and Civil Engineering, SJTU, China}
+\cventry{3.2012--3.2013}{Development of Low Cost Test-bed for Autonomous Underwater Vehicle (AUV) Onboard Intelligence} {}{}{}{
+This is a \emph{National Undergraduate Innovation Program}. I \textbf{led} four other team members to build a toy submarine equipped with an embedded computer, a gyro, a barometer, etc., to autonomously drive itself. I learned the PID controller, designed and implemented a sliding mode control system, assembled the submarine and carried out a series of underwater experiments.
+}
+
+%----------------------------------------------------------------------------------------
+%	COURSE PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Course Projects}
+\cvitem{}{Codes of some projects available at \href{https://github.com/roxanneluo}{https://github.com/roxanneluo}}
+\cvitemwithcomment{2014}{Fatworm Database, Java}{Designed and implemented a database management system}
+\cvitemwithcomment{2014}{Freebase, PHP+MySQL}{Small web search engine built over the Freebase database}
+\cvitemwithcomment{2014}{Wireless Multi-hop Routing, TinyOS}{For telecommunication of wireless sensors}
+\cvitemwithcomment{2013-2014}{Nachos Operating System, Java}{Nachos Project from UC Berkeley CS162}
+\cvitemwithcomment{2013}{Modern Compiler Implementation, Java}{Compiler for Simplified C Language}
+\cvitemwithcomment{2013}{Simulated CPU, Verilog}{MIPS CPU design task from UC Berkeley CS152}
+\cvitemwithcomment{2013}{Galaxy Maze, OpenGL}{Self-designed 3D Game.}
+
+%----------------------------------------------------------------------------------------
+%	PROGRAMMING LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+\section{Programming Languages}
+%\cvitem{}{PHP, Verilog, OpenGL,TinyOS, \textsc{python}, \textsc{html}, \LaTeX, Matlab, C++, \textsc{java}}
+\begin{comment}
+\cvitem{}{
+\begin{tabular}{l c r}
+	Basic & Intermediate & Advanced\\
+	PHP, Verilog, OpenGL,TinyOS & \textsc{python}, \textsc{html}, \LaTeX, MySQL & Matlab, C++, \textsc{java}\\
+\end{tabular}
+}
+\end{comment}
+
+%\begin{comment}
+\begin{cvcolumns}
+  \cvcolumn{Basic}{PHP, Verilog, OpenGL,TinyOS}
+  \cvcolumn[0.38]{Intermediate}{\textsc{python}, \textsc{html}, \LaTeX, MySQL}
+  \cvcolumn[0.25]{Advanced}{Matlab, C++, \textsc{java}}
+\end{cvcolumns}
+%\end{comment}
+%\cvitem{Basic}{PHP, Verilog, OpenGL,TinyOS}
+%\cvitem{Intermediate}{\textsc{python}, \textsc{html}, \LaTeX}
+%\cvitem{Advanced}{Matlab, C++, \textsc{java}}
+\vspace{-1.5em}
+%----------------------------------------------------------------------------------------
+%	PERSONAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\section{Specialty}
+\cvitem{Fine Arts}{Good at painting. My portfolio available at \href{http://bcmi.sjtu.edu.cn/~luoxuan/portfolio/main.html}{bcmi.sjtu.edu.cn/$\sim$luoxuan/portfolio/main.html}}
+
+\begin{comment}
+\cvline{Language}{English}
+	\cvlistitem{\textbf{CET-6}: 645/710}
+    \cvlistitem{GRE: 162/170, 170/170, 3.5/6}
+    \cvlistitem{TOEFL:109/120}
+\end{comment}
+
+
+%----------------------------------------------------------------------------------------
+%	SERVICES SECTION
+%----------------------------------------------------------------------------------------
+\section{Services}
+
+\cventry{2012}{Hostess of the ceremony for the 10th Anniversary of the ACM Honored Class}{}{}{}{}
+%\cventry{2012}{Member, Organization Department}{Student Union}{Zhiyuan College}{SJTU}{}
+\cventry{2013}{Member, Youth Volunteer Service Team}{Student Union}{Zhiyuan College}{SJTU}{}
+
+\begin{comment}
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{English}{Mothertongue}{}
+\cvitemwithcomment{Spanish}{Intermediate}{Conversationally fluent}
+\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Piano}{Chess}
+\cvlistdoubleitem{Cooking}{Dancing}
+\cvlistitem{Running}
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+
+\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Sincerely yours,} % Closing phrase
+\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+\lipsum[1-3] % Dummy text
+
+\makeletterclosing % Print letter signature
+\end{comment}
+%----------------------------------------------------------------------------------------
+
+\end{document}
