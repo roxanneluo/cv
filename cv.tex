@@ -35,8 +35,8 @@
 % All information in this block is optional, comment out any lines you don't need
 \title{Curriculum Vitae}
 %No. 800, Dongchuan Road, Shanghai, 200240
-\address{CSE 324}{University of Washington, Seattle, WA 98195}
-\mobile{(+1) 206-866-4956}
+\address{Paul G. Allen School of Computer Science and Engineering}{University of Washington, Seattle, WA 98195}
+%\mobile{(+1) 206-866-4956}
 \email{xuanluo@cs.washington.edu}%optional, remove the line if not wanted
 % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 %\extrainfo{additional information}
@@ -55,20 +55,21 @@
 %----------------------------------------------------------------------------------------
 \section{Education}
 \cventry{2015--now}{Ph.D., Computer Science and Engineering}{University of Washington}{Seattle, WA, US}{}{}
-\cvlistitem{Advised by \href{https://homes.cs.washington.edu/~seitz/}{\emph{\textbf{Steven M. Seitz}}} in \href{http://grail.cs.washington.edu}{\emph{GRAIL}} lab.}
+\cvlistitem{Advised by \href{https://homes.cs.washington.edu/~seitz/}{\emph{\textbf{Steven M. Seitz}}} and \href{http://www.cs.virginia.edu/~jdl/}{\emph{\textbf{Jason Lawrence}}} in \href{https://realitylab.uw.edu}{\emph{UW Reality Lab}}.}
 \cvlistitem{Area of Research: Virtual/Augmented Reality.}
 	
 \cventry{2011--2015}{B.S., Computer Science and Technology}{Shanghai Jiao Tong University (SJTU)}{}{China}{}
 \cvitem{Program}{\href{http://zhiyuan.sjtu.edu.cn/teachers/computer}{\textbf{\emph{ACM Honored Class}}} (a pilot computer science class in China), Zhiyuan College}
-\cvlistitem{Rank:  All 3 years: 2/27. Sophomore year: \textbf{1/27}.}
-\cvlistitem{Major GPA: 3.96/4.3, 91.28/100. Cumulative GPA: 3.95/4.3 , 90.97/100. (All 3 years)}
-\cvlistitem{Good \textbf{math} training: 14 out of all 15 math courses are above A and 8 of them are over A+. }
+%\cvlistitem{Rank:  All 3 years: 2/27. Sophomore year: \textbf{1/27}.}
+%\cvlistitem{Major GPA: 3.96/4.3, 91.28/100. Cumulative GPA: 3.95/4.3 , 90.97/100. (All 3 years)}
+%\cvlistitem{Good \textbf{math} training: 14 out of all 15 math courses are above A and 8 of them are over A+. }
 \cventry{9.2014-2.2015}{Visiting Scholar}{National University of Singapore}{Singapore}{}{}
 \cventry{7.2014}{Exchange Student}{Cornell University}{Ithaca, NY, US}{}{}
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 \section{Work Experience}
+\cventry{2017 summer}{Research Intern}{Disney Research}{Zurich, Switzerland}{}{Worked on Face Performance Capture}
 \cventry{2016 summer}{Software Engineering Intern}{ Google Daydream}{Seattle, WA, USA}{}{}
 %----------------------------------------------------------------------------------------
 %	PROGRAMMING LANGUAGES SECTION
@@ -101,14 +102,15 @@
 %	RESEARCH INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 \section{Research Interests}
-\cvitemwithcomment{}{Augmented/Virtual Reality}{3D Display}
-\cvitemwithcomment{}{Computer Vision}{Stereo Matching, Deep Learning, Detection}
+\cvitemwithcomment{}{Augmented/Virtual Reality}{Novel View Synthesis, Computational Display}
+\cvitemwithcomment{}{Computer Vision}{Inpainting, Stereo Matching, Deep Learning, Face Performance Capture}
 \cvitemwithcomment{}{Graphics}{}
 
 %----------------------------------------------------------------------------------------
 %	AWARDS SECTION
 %----------------------------------------------------------------------------------------
 \section{Honors and Awards}
+\cvitemwithcomment{2018}{Reality Lab Huawei Fellowship}{}
 \cvitemwithcomment{2015}{Distinguished Graduate Scholarship, SJTU}{Top 1\% }
 \cvitemwithcomment{2015}{Shanghai Outstanding Graduate}{Top 1\%}
 \cvitemwithcomment{2013}{National Scholarship, China}{Highest scholarship in China, top 1\%}
@@ -119,6 +121,7 @@
 %	PUBLICATION SECTION
 %----------------------------------------------------------------------------------------
 \section{Publications}
+\cvitem{}{\textbf{Xuan Luo}, Jason Lawrence, Steven M. Seitz.  \textit{\enquote{Pepper's Cone: An Inexpensive Do-It-Yourself 3D Display}.} UIST, 2017.}
 \cvitem{}{Min Lin, Shuo Li, \textbf{Xuan Luo}.  \textit{\enquote{Purine: A Graph-based Deep Learning Framework}.} International Conference on Learning Representations (ICLR), 2015.}
 \cvitem{}{Xuejiao Bai, \textbf{Xuan Luo}, Shuo Li.  \textit{\enquote{Adaptive Stereo Matching via Loop-erased Random Walk}.} IEEE International Conference on Image Processing (ICIP), 2014.}
 %\cvitem{}{Xuejiao Bai, \textbf{Xuan Luo}, Shuo Li.  \textit{\enquote{An Effective Disparity-Prediction-Based Accelerator for Stereo Matching}} \textbf{International Journal of Computer Vision (IJCV)} (submitted in 2014).}
@@ -127,11 +130,16 @@
 %	RESEARCH EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 \section{Research Experience}
-%TODO turn the papers and projects to linkss
+\subsection{Telepresence}
+\cvitem{Advisor}{Steven M. Seitz, Jason Lawrence, University of Washington, US}
+\cventry{2.2017-now}{Stereo to 6DoF}{}{}{}{Is it possible to meet with Mark Twain in VR? I'm working on enabling 6-degree-of-freedom viewing from stereographs to make this possible. In Progress.}
+\cventry{10.2015-4.2017}{Pepper's Cone}{\emph{UIST 2017}}{
+\textit{\href{https://roxanneluo.github.io/PeppersCone.html}{https://roxanneluo.github.io/PeppersCone.html}}}{}{Fold a piece of plastic sheet into a cone. Together with your tablet, you can build the Pepper's Cone to observe the "hologram" of your 3D scene in a fun and compelling way.}
 \subsection{Computational Display}
-\cvitem{Advisor}{Steven M. Seitz, University of Washington, US}
-\cventry{10.2015-now}{Pop-up 3D Display}{}{}{}{We designed a simple, cheap and glass-free 3D display. It only requires a tablet with gyroscope and a rotational symmetric reflector (a plastic cup, a plastic cone made of a piece of plastic sheet, etc.) to show a 3D hologram inside the reflector.}
-
+\cvitem{Advisor}{Steven M. Seitz, Jason Lawrence, University of Washington, US}
+\cventry{10.2015-4.2017}{Pepper's Cone}{\emph{UIST 2017}}{
+\textit{\href{https://roxanneluo.github.io/PeppersCone.html}{https://roxanneluo.github.io/PeppersCone.html}}}{}{Fold a piece of plastic sheet into a cone. Together with your tablet, you can build the Pepper's Cone to observe the "hologram" of your 3D scene in a fun and compelling way.}
+%TODO turn the papers and projects to linkss
 \subsection{Stereo Matching}
 \cvitem{Goal}{Recover depth information from a pair of images of the same scene. ($disparity \propto 1/depth$)}
 \cvitem{Advisor}{Hongtao Lu, Center for Brain-like Computing and Machine Intelligence, SJTU, China}
@@ -151,11 +159,13 @@ I proposed to use a random tree generated by Loop-erased Radom Walk (LERW) to re
 %Most previous algorithms use brute force to search the best disparity (inversely propotional to depth) from all disparity candidates. So they are slow and unsuitable for real-world applications. 
 \subsection{Deep Learning}
 \cvitem{Advisor}{Shuicheng Yan, Learning and Vision Research Group, National University of Singapore}
-\cventry{8.2014-10.2014}{Purine}{}{}{}{
-\textit{\href{http://arxiv.org/abs/1412.6249}{pdf: http://arxiv.org/abs/1412.6249}\\
-\href{http://bcmi.sjtu.edu.cn/~luoxuan/slides/purine_introduction.html}{ppt: http://bcmi.sjtu.edu.cn/$\sim$luoxuan/slides/purine\_introduction.html}\\
-\href{https://github.com/purine/purine2}{code: https://github.com/purine/purine2}\\
+\cventry{8.2014-10.2014}{Purine}{\emph{ICLR 2015}}{
+\textit{
+%\href{http://arxiv.org/abs/1412.6249}{pdf: http://arxiv.org/abs/1412.6249}\\
+%\href{http://bcmi.sjtu.edu.cn/~luoxuan/slides/purine_introduction.html}{ppt: http://bcmi.sjtu.edu.cn/$\sim$luoxuan/slides/purine\_introduction.html}\\
+\href{https://github.com/purine/purine2}{https://github.com/purine/purine2}
 }
+}{}{
 Purine is a flexible graph-based parallel deep learning framework. It outperforms current widely-used deep learning frameworks in that its graph-based design allows any kind of parallelism, both data and model parallelism, arbitrary network structure (e.g., recurrent neural network), and can utilize unlimited number of CPUs and GPUs. And it's fast and easy-to-use. I contributed the multi-GPU \& multi-machine data copy part, the key bottleneck for all parallel frameworks, testing codes and part of the network definition protocol. It will be released soon.
 } 
 %\cventry{10.2014--2.2015}{Gradient of CNN}{}{}{}{I tried to exploit information contained in the gradient of CNN on object detection.}
